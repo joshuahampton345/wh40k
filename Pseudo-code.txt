@@ -1,0 +1,29 @@
+Runner(location, runnerarray, ready)
+method1()
+returns location of runner
+method2()
+de-ques busses from runnerarray. When array is empty, changes status and uses gatekeeper.method8().
+method3()
+changes ready status
+method4()
+changes runners location to expressed location.
+
+
+Bus(location id comingback)
+method5()
+returns buses location
+method6()
+returns the buses id
+method7()
+returns whether the bus is returning
+
+Gatekeeper(busarry)
+method8()
+uses runner.method3(). If ready, uses runner.method1() and bus.method5(). If the same, puts
+bus into runners que. While the runners location and the bus's location is the same, puts buses in the runners que.If
+different, uses runner.method4(bus-locatoin) and while the runner.method1() and bus.method5() are the same, puts busses
+into runers que. If runner is not ready, break. If busarray is empty, end.
+runner.method2()
+
+
+
